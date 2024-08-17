@@ -33,7 +33,7 @@ namespace DashboardWebApp2
                     client.DefaultRequestHeaders.Clear();
                     client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-                    client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", "API key");
+                    client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", "[insert API key here]");
 
                     try
                     {
