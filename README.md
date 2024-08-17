@@ -7,12 +7,12 @@ I hid some information in the codes, such as the API key and uID list for securi
 
 _Short explanation of files:_
 
-*DashboardJson.cs: Where the API is called.
+* DashboardJson.cs: Where the API is called.
 
-*GetUidList.cs: The list of uIDs is retrieved from a dataset in the actual project but it is possible to enter them by hand like this.
+* GetUidList.cs: The list of uIDs is retrieved from a dataset in the actual project but it is possible to enter them by hand like this.
 
-*SearchingClass.cs: A class containing the two different searching functions.
+* SearchingClass.cs: A class containing the two different searching functions.
 
-*Search.cshtml: Frontend of the page, has a form to get the input.
+* Search.cshtml: Frontend of the page, has a form to get the input.
 
-*Search.cshtml.cs: PageModel of Search, calls the desired function on post.
+* Search.cshtml.cs: PageModel of Search, calls the desired function on post.
