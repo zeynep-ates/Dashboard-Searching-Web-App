@@ -5,8 +5,14 @@ I worked on this project in my internship. The organization uses Grafana to visu
 
 I hid some information in the codes, such as the API key and uID list for security purposes.
 
+* Short explanation of files *
+
 DashboardJson.cs: Where the API is called.
+
 GetUidList.cs: The list of uIDs is retrieved from a dataset in the actual project but it is possible to enter them by hand like this.
+
 SearchingClass.cs: A class containing the two different searching functions.
+
 Search.cshtml: Frontend of the page, has a form to get the input.
+
 Search.cshtml.cs: PageModel of Search, calls the desired function on post.
