@@ -1,0 +1,31 @@
+﻿@page
+@model DashboardWebApp2.Pages.SearchModel
+@{
+    
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Telemetry ID Searcher</title>
+</head>
+<body>
+    <form method="post">
+        <fieldset>
+            <legend>Search an ID or Name</legend>
+            <div>
+                <select id="choice" name="choice">
+                    <option value="inputID">Telemetry ID: </option>
+                    <option value="inputName" selected>Telemetry Name: </option>
+                </select>
+                <input type="text" name="userInput" value=""/>
+            </div>
+            <div>
+                <input type="submit" value="Submit" class="submit" />
+            </div>
+            
+        </fieldset>
+    </form>
+    <p>@Html.Raw(@Model.searchResponseText)</p>
+</body>
+</html>
