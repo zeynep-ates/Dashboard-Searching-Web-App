@@ -33,7 +33,7 @@ namespace DashboardWebApp2
                     client.DefaultRequestHeaders.Clear();
                     client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-                    client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", "eyJrIjoiRk5JM055ZXN6a1FyVGNuVWV2b21SNldBVVBuUXZIUmsiLCJuIjoidXpheV9hcGkiLCJpZCI6MX0=");
+                    client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", "API key");
 
                     try
                     {
@@ -52,21 +52,18 @@ namespace DashboardWebApp2
                             {
                                 dashboardOutputModel = null;
                                 errorMessage = "Grafana apiden response okunurken serialize hatası. uId:" + dashboardUid;
-                                //_logger.Error(responseEx, OpResult.Message);
                             }
                         }
                         else
                         {
                             dashboardOutputModel = null;
                             errorMessage = "Grafana apiden okunurken response hatası. uId:" + dashboardUid + " " + response.ReasonPhrase;
-                            //_logger.Error(OpResult.Message);
                         }
                     }
                     catch (Exception postEx)
                     {
                         dashboardOutputModel = null;
                         errorMessage = "Grafana apiden get edilirken hata. uId:" + dashboardUid;
-                        //_logger.Error(postEx, OpResult.Message);
                     }
                 }
             }
@@ -74,7 +71,6 @@ namespace DashboardWebApp2
             {
                 dashboardOutputModel = null;
                 errorMessage = "Grafana apiye httpclient oluşturulurken. uId:" + dashboardUid;
-                //_logger.Error(clientEx, OpResult.Message);
             }
 
             return dashboardOutputModel;
