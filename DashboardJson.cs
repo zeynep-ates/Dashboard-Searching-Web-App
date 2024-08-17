@@ -46,7 +46,6 @@ namespace DashboardWebApp2
                                 var outputResponse = response.Content.ReadAsStringAsync().Result;
                                 dashboardOutputModel = JsonConvert.DeserializeObject<System.Dynamic.ExpandoObject>(outputResponse);
                                 isSuccess = true;
-                                //resultOk();
                             }
                             catch (Exception responseEx)
                             {
